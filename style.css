@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Teachers", sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+}
+
+.quiz-container,
+#result {
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+}
+
+h2{
+  margin-bottom: 10px;
+}
+
+#question {
+  font-size: 20px;
+}
+
+#options button {
+  height: 45px;
+  background-color: #f7fcff;
+  border: 1px solid #009cfd;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#options button.disabled {
+  pointer-events: none;
+}
+
+#options button:hover,
+#options button.active {
+  background-color: #ddf1fd;
+}
+
+#options button.correct {
+  border-color: #1ce015;
+  color: #1ce015;
+  background-color: #e9ffe8;
+}
+
+#options button.wrong {
+  border-color: #e71111;
+  color: #e71111;
+  background-color: #ffe4e4;
+}
+
+#next-btn,
+#retry-btn {
+  height: 40px;
+  padding-inline: 10px;
+  background-color: #009cfd;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#next-btn:hover,
+#retry-btn:hover {
+  background-color: #138bd6;
+}
+
+.hidden {
+  display: none;
+}
+
+#options button {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+}
